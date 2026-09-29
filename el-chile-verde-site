@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Chile Verde Mexican Food</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0F3D2E;
+  color: #F8F3E7;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 5px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: #D4AF37;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background: #fff;
+}
+
+.btn-outline {
+  border: 2px solid #D4AF37;
+  color: #D4AF37;
+}
+
+.btn-outline:hover {
+  background: #D4AF37;
+  color: #000;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 0;
+}
+
+.about, .menu, .reviews {
+  text-align: center;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+/* MENU */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #123f31;
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* REVIEWS */
+.review {
+  background: #123f31;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+/* LOCATION */
+.location {
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #09281f;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>El Chile Verde</h1>
+    <p>Authentic Mexican Flavor. Made With Heart.</p>
+    <a href="#" class="btn btn-primary">Order Now</a>
+    <a href="#location" class="btn btn-outline">Visit Us</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <div class="container">
+    <h2>Not Just Food. It's Love in Every Bite.</h2>
+    <p>
+      El Chile Verde isn’t just another food spot — it’s where flavor meets passion.
+      Known for generous portions, real ingredients, and unmatched hospitality,
+      this is the place locals trust when they want something truly satisfying.
+    </p>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu">
+  <div class="container">
+    <h2>Customer Favorites</h2>
+    <div class="menu-grid">
+      <div class="card">
+        <h3>Birria Tacos</h3>
+        <p>Juicy, slow-cooked, dipped in rich consommé.</p>
+      </div>
+      <div class="card">
+        <h3>California Burrito</h3>
+        <p>Loaded and unforgettable.</p>
+      </div>
+      <div class="card">
+        <h3>Loaded Fries</h3>
+        <p>Carne asada, cheese, flavor overload.</p>
+      </div>
+      <div class="card">
+        <h3>Quesadillas</h3>
+        <p>Cheesy, crispy, made fresh.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews">
+  <div class="container">
+    <h2>What People Are Saying</h2>
+
+    <div class="review">“They hooked it up with a free taco — I knew I picked the right spot.”</div>
+    <div class="review">“Authentic, refreshing, and delicious — reminds us of Phoenix.”</div>
+    <div class="review">“Super friendly, amazing food, and great prices. 10/10.”</div>
+
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="location" id="location">
+  <div class="container">
+    <h2>Find Us</h2>
+    <p>2200 Marigold Ave, Kissimmee, FL</p>
+    <p>(407) 967-9418</p>
+    <p>Open Daily — Closes at 9PM</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 El Chile Verde Mexican Food</p>
+</footer>
+
+</body>
+</html>
